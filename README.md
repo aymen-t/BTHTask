@@ -24,7 +24,7 @@ We are assuming that the original data generation code was not available in a re
 - These were approximate values (mean and standard deviation), I did not reuse them but kept them in mind to create similar but altered distributions. 
 
 ### Generate Similar Dataset:
-- The next task is to generate a similar dataset. I created a new dataset with:
+- The next task is to generate a similar dataset (Code can be found in "GeneratingSimilarDataset"). I created a new dataset with:
 - A different but realistic probability distribution for Category1: [0.4, 0.2, 0.1, 0.2, 0.1]
 - The same sample size (500 rows) for comparability.
 - I compared the original and synthetic datasets using both statistical metrics  i.e Pearson correlatio and visual plots.
