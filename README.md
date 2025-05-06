@@ -27,9 +27,9 @@ We are assuming that the original data generation code was not available in a re
 - The next task is to generate a similar dataset (Code can be found in "GeneratingSimilarDataset"). I created a new dataset with:
 - A different but realistic probability distribution for Category1: [0.4, 0.2, 0.1, 0.2, 0.1]
 - The same sample size (500 rows) for comparability.
-- I compared the original and synthetic datasets using both statistical metrics  i.e Pearson correlatio and visual plots.
+- I compared the original and synthetic datasets using both statistical metrics  i.e Pearson correlation and visual plots.
 - For Visualization, I used, Scatter plots for Value1 vs Value2 from both datasets and Line plots to inspect the overall pattern across rows
-- The mean and standard deviation my generated data are given below
+- The mean and standard deviation of my generated data are given below
 -              Value1      Value2
       count  500.000000  500.000000
       mean    11.022860   19.363565
