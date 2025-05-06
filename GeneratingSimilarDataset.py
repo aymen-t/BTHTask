@@ -40,7 +40,7 @@ if __name__ == "__main__":
     correlation_coefficient, p_value = pearsonr(aymenobserved, originalexpected)
     print(f"Corr coeff: {correlation_coefficient}, p-value: {p_value}")
 
-    fig, ax = plt.subplots(2, 2, figsize=(10, 8))  # optional: set a better figure size
+    fig, ax = plt.subplots(2, 2, figsize=(10, 8))  
 
     # Top-left: Observed scatter
     ax[0, 0].scatter(aymenobserved["Value1"], aymenobserved["Value2"], label="Aymen Data")
