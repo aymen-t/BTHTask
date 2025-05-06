@@ -13,21 +13,21 @@ if __name__ == "__main__":
     df = pd.DataFrame({
         "Category1": np.random.choice(["A", "B", "C", "D", "E"],
                                       num_samples, p=[0.2, 0.4, 0.2, 0.1, 0.1]),
-        "Value1": np.random.normal(10, 2, num_samples),  # Continuous variable
-        "Value2": np.random.normal(20, 6, num_samples),  # Continuous variable
+        "Value1": np.random.normal(10, 2, num_samples),  
+        "Value2": np.random.normal(20, 6, num_samples),  
     })
     df.to_csv("original.csv", sep=";")
   
     print("\nCategorical Variable Distribution (Category1):")
-    category_counts = df['Category1'].value_counts(normalize=True)  # normalized to get proportions
+    category_counts = df['Category1'].value_counts(normalize=True)  
     print(category_counts)
 
     plt.figure(figsize=(8, 6))
     sns.countplot(x='Category1', data=df)
     plt.title('Distribution of Alphabets')
-    plt.show()  #shows distribution of categories
+    plt.show()  
 
-    print("\nSummary Statistics for Value1 and Value2:") #shows stats of Value 1 and Value 2
+    print("\nSummary Statistics for Value1 and Value2:") 
     print(df[['Value1', 'Value2']].describe())
 
 # Create a figure and axes for two subplots (side-by-side)
